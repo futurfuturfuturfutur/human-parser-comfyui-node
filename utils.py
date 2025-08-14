@@ -81,11 +81,11 @@ def generate(image, type, device):
   input_size = dataset_settings[type]['input_size']
   aspect_ratio = input_size[1] * 1.0 / input_size[0]
   if type == 'lip':
-    model_path = 'models/schp/exp-schp-201908261155-lip.pth'
+    model_path = '/workspace/ComfyUI/models/schp/exp-schp-201908261155-lip.pth'
   elif type == 'atr':
-    model_path = 'models/schp/exp-schp-201908301523-atr.pth'
+    model_path = '/workspace/ComfyUI/models/schp/exp-schp-201908301523-atr.pth'
   elif type == 'pascal':
-    model_path = 'models/schp/exp-schp-201908270938-pascal-person-part.pth'
+    model_path = '/workspace/ComfyUI/models/schp/exp-schp-201908270938-pascal-person-part.pth'
 
   # Check and adjust the model path if necessary
   model_path = check_model_path(model_path)
